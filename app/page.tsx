@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ProgressIndicator } from "@/components/ProgressIndicator";
 import { SoundToggle } from "@/components/SoundToggle";
 import { playSound } from "@/lib/sound";
+import Image from "next/image";
 
 export default function LandingPage() {
     const router = useRouter();
@@ -120,10 +121,12 @@ export default function LandingPage() {
                     {/* Header Image */}
                     <div className="flex justify-center mb-6">
                         <div className="w-48 h-48 relative">
-                            <img
+                            <Image
                                 src="/arthur2.jpeg"
                                 alt="Valentine"
-                                className="w-full h-full object-cover rounded-xl shadow-lg"
+                                fill
+                                className="object-cover rounded-xl shadow-lg"
+                                priority
                             />
                         </div>
                     </div>

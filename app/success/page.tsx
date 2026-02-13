@@ -9,6 +9,7 @@ import { ProgressIndicator } from "@/components/ProgressIndicator";
 import { SoundToggle } from "@/components/SoundToggle";
 import { ConfettiHearts } from "@/components/ConfettiHearts";
 import { playSound } from "@/lib/sound";
+import Image from "next/image";
 
 export default function SuccessPage() {
     const router = useRouter();
@@ -81,7 +82,7 @@ export default function SuccessPage() {
             {/* Audio Element for Voice Note */}
             <audio
                 ref={audioRef}
-                src="/Yolo.m4a"
+                src="/valentine_lol/Yolo.m4a"
                 onEnded={handleVoiceNoteEnded}
                 onPlay={() => setIsPlayingVoice(true)}
                 onPause={() => setIsPlayingVoice(false)}
@@ -116,10 +117,11 @@ export default function SuccessPage() {
                                 transition={{ delay: 0.3, duration: 0.5 }}
                                 className="w-64 h-64 relative rounded-xl overflow-hidden shadow-lg"
                             >
-                                <img
+                                <Image
                                     src="/final.jpeg"
                                     alt="Happy Valentine"
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
                                 />
                             </motion.div>
                         </div>

@@ -3,6 +3,7 @@ const nextConfig = {
     reactStrictMode: true,
     output: 'export',
     images: { unoptimized: true },
+    basePath: '/valentine_lol',
 };
 
 module.exports = nextConfig;

@@ -14,7 +14,7 @@ export function playSound(soundName: "pop" | "click" | "success"): void {
     if (!getSoundPreference()) return;
 
     try {
-        const audio = new Audio(`/sounds/${soundName}.mp3`);
+        const audio = new Audio(`/valentine_lol/sounds/${soundName}.mp3`);
         audio.volume = 0.5;
         audio.play().catch(() => {
             // Browser may block autoplay - this is expected

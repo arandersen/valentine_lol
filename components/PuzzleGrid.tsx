@@ -47,7 +47,7 @@ export function PuzzleGrid({ tiles, onTileMove, disabled }: PuzzleGridProps) {
                     style={
                         tile !== null
                             ? {
-                                backgroundImage: "url('/arthur3.jpeg')",
+                                backgroundImage: "url('/valentine_lol/arthur3.jpeg')",
                                 backgroundSize: "300% 300%",
                                 backgroundPosition: getTileBackgroundPosition(tile),
                             }
