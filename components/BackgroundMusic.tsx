@@ -32,7 +32,7 @@ export function BackgroundMusic() {
         <>
             <audio
                 ref={audioRef}
-                src="/sounds/valentine-music.mp3"
+                src="/valentine_lol/sounds/valentine-music.mp3"
                 loop
                 preload="none"
             />
