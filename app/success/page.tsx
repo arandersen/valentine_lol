@@ -9,7 +9,6 @@ import { ProgressIndicator } from "@/components/ProgressIndicator";
 import { SoundToggle } from "@/components/SoundToggle";
 import { ConfettiHearts } from "@/components/ConfettiHearts";
 import { playSound } from "@/lib/sound";
-import Image from "next/image";
 
 export default function SuccessPage() {
     const router = useRouter();
@@ -117,11 +116,10 @@ export default function SuccessPage() {
                                 transition={{ delay: 0.3, duration: 0.5 }}
                                 className="w-64 h-64 relative rounded-xl overflow-hidden shadow-lg"
                             >
-                                <Image
-                                    src="/final.jpeg"
+                                <img
+                                    src="/valentine_lol/final.jpeg"
                                     alt="Happy Valentine"
-                                    fill
-                                    className="object-cover"
+                                    className="w-full h-full object-cover"
                                 />
                             </motion.div>
                         </div>

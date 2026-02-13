@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { ProgressIndicator } from "@/components/ProgressIndicator";
 import { SoundToggle } from "@/components/SoundToggle";
 import { playSound } from "@/lib/sound";
-import Image from "next/image";
 
 export default function LandingPage() {
     const router = useRouter();
@@ -121,12 +120,10 @@ export default function LandingPage() {
                     {/* Header Image */}
                     <div className="flex justify-center mb-6">
                         <div className="w-48 h-48 relative">
-                            <Image
-                                src="/arthur2.jpeg"
+                            <img
+                                src="/valentine_lol/arthur2.jpeg"
                                 alt="Valentine"
-                                fill
-                                className="object-cover rounded-xl shadow-lg"
-                                priority
+                                className="w-full h-full object-cover rounded-xl shadow-lg"
                             />
                         </div>
                     </div>
